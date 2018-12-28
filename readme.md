@@ -1,8 +1,10 @@
 # PTest - python based testing solution
 
 *run tests*
+
 ``
 pytest
+
 pytest -v
 ``
 
