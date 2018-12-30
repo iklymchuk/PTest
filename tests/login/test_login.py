@@ -13,7 +13,6 @@ def test_can_navigate_to_the_login_page(chrome_browser):
     assert True
 
 @mark.ui
-@mark.environment
 def test_can_navigate_to_the_env_page(chrome_browser, app_config):
     base_url = app_config.base_url
     port = app_config.app_port
