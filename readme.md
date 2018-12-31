@@ -11,9 +11,9 @@ pytest -v
 pytest --markers
 pytest -m login
 pytest -m smoke -v
-```
 *Logical AND* ``pytest -m "account and login"``
 *Logical OR* ``pytest -m "account or login"``
+```
 
 **Report**
 ```
@@ -28,8 +28,10 @@ pytest --junitxml="result.xml"
 **Expected failures** ``pytest -m=environment --env=dev -v -rx``
 
 **Browsers**
+```
 *Single browser approach* ``pytest -m=login``
 *Parallel browser approach* ``pytest -m=e2e``
+```
 
 **Sample test data parameterization** ``pytest -m=tv -s -v``
 
