@@ -1,53 +1,36 @@
 # PTest - python based testing solution
 
-*run tests*
-
+**Run tests**
 ```
 pytest
 pytest -v
 ```
 
-*markers*
-
+**Markers**
 ```
 pytest --markers
 pytest -m login
 pytest -m smoke -v
 ```
+*Logical AND* ``pytest -m "account and login"``
+*Logical OR* ``pytest -m "account or login"``
 
-*logical AND*
-
-```
-pytest -m "account and login"
-```
-
-*logical OR*
-
-```
-pytest -m "account or login"
-```
-
-*report*
-
+**Report**
 ```
 pytest --html="report.html"
 pytest --junitxml="result.xml"
 ```
 
-*pytest argparse*
+**Pytest argparse** ``pytest -m=environment --env=dev -v``
 
-```
-pytest -m=environment --env=dev -v
-```
+**Handling skips** ``pytest -m=environment --env=dev -v -rs``
 
-*handling skips*
+**Expected failures** ``pytest -m=environment --env=dev -v -rx``
 
-```
-pytest -m=environment --env=dev -v -rs
-```
+**Browsers**
+*Single browser approach* ``pytest -m=login``
+*Parallel browser approach* ``pytest -m=e2e``
 
-*expected failures*
+**Sample test data parameterization** ``pytest -m=tv -s -v``
 
-```
-pytest -m=environment --env=dev -v -rx
-```
+**Test data parameterization from external file** ``pytest -m=external_data -s -v``
