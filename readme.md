@@ -1,4 +1,19 @@
-# PTest - python based testing solution
+# PTest - sample pytest ATF structure
+
+## Note on Codespaces Virtualenv 
+Checkout how if you run `pip freeze | wc -l` there are many packages we may not want
+Try `which python`
+1. `virtualenv ~/.venv` 
+2. Always source this virt env:
+`vim ~/.bashrc` and put in `source ~/.venv/bin/activate`
+3. Verify the right python `which python` and try `pip freeze | wc -l` it should be 0
+
+## Make file
+* `make install` install the project dependencies
+* `make test` perform tests execution and coverage stat
+* `make format` formatting the code
+* `make lint` static code validation
+* `make all` perform all operations (from step 1 to step 4) one after each other
 
 **Run tests**
 ```
