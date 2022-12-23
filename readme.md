@@ -20,6 +20,8 @@ Try `which python`
 * `python -m pytest -vv -m "deposit or withdraw"` run tests by multiple markers
 * `python -m pytest -vv -m "not deposit"` exclude some marks from execution
 
+* `-s` to see the prints
+
 ## List of markers
 `pytest --markers` get back the list of markers (custom and default)
 

@@ -5,9 +5,9 @@ from pytest import mark
 @mark.account
 class AccountTests:
     @mark.smoke
-    def test_account_as_user(self):
-        assert True
+    def test_account_as_user(self, dummy_browser_instance):
+        assert "browser" in dummy_browser_instance
 
     @mark.smoke
-    def test_account_as_admin(self):
-        assert True
+    def test_account_as_admin(self, dummy_browser_instance):
+        assert "browser" in dummy_browser_instance
