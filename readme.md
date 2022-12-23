@@ -15,7 +15,15 @@ Try `which python`
 * `make lint` static code validation
 * `make all` perform all operations (from step 1 to step 4) one after each other
 
-**Run tests**
+## Run tests
+* `python -m pytest -vv -m deposit` run tests by a single marker
+* `python -m pytest -vv -m "deposit or withdraw"` run tests by multiple markers
+* `python -m pytest -vv -m "not deposit"` exclude some marks from execution
+
+## List of markers
+`pytest --markers` get back the list of markers (custom and default)
+
+
 ```
 pytest
 pytest -v
