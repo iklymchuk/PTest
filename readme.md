@@ -25,6 +25,13 @@ Try `which python`
 ## List of markers
 `pytest --markers` get back the list of markers (custom and default)
 
+## Add option to run the tests with different configs
+* `config.py` - set up the configuration
+* `conftest` - add option and fixture for usage
+* `test_account_config_usage.py` - example of usage custom option
+* `pytest -h` - custom option should be added to the Custom options section for pytest help
+* `python -m pytest --env dev -vv -m test_dev_config` - usage of custom option
+
 
 ```
 pytest
